@@ -1,0 +1,58 @@
+.button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  z-index: 10000 !important;
+
+  &.contained {
+    background-color: var(--text-primary);
+    color: var(--background);
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &.outlined {
+    position: relative;
+    border: 1px solid var(--text-primary);
+    color: var(--text-primary);
+    overflow: hidden;
+
+    transition: background-color 0.1s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: var(--text-primary);
+      opacity: 0;
+      transition: opacity 0.1s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.1;
+      }
+    }
+  }
+  &.text {
+    color: var(--text-primary);
+  }
+
+  &.sm {
+    padding: 4px 8px !important;
+    font-size: small;
+  }
+  &.lg {
+    padding: 10px 16px !important;
+    font-size: medium;
+  }
+  &.xl {
+    padding: 16px 24px !important;
+    font-size: large;
+  }
+  &.xxl {
+    padding: 24px 32px !important;
+    font-size: x-large;
+  }
+}

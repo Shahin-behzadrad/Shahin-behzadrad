@@ -1,13 +1,32 @@
 .navbar {
-  position: absolute;
-  top: 0;
+  position: sticky;
+  top: 16px;
   right: 0;
   left: 0;
-  padding-inline: 60px;
+  margin-inline: 32px;
+  padding-inline: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
+  height: 64px;
+  z-index: 10;
+  max-width: 1400px;
+  background-color: rgba(53, 50, 50, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+
+  .shahinLogo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    span {
+      margin-bottom: 6px;
+      font-size: 10px;
+    }
+  }
 
   .navbarBtns {
     display: flex;
@@ -16,6 +35,7 @@
     button {
       color: var(--neutral-gray) !important;
       font-weight: bold;
+      padding-inline: 0;
     }
   }
 }

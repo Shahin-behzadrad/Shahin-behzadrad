@@ -1,0 +1,13 @@
+.wrapper {
+  width: 100vw; /* Full viewport width */
+  position: relative; /* Ensure it spans edge to edge */
+  left: 50%;
+  transform: translateX(-50%); /* Center-align it */
+  background: linear-gradient(to top, var(--secondary), var(--background));
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
