@@ -1,12 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* Light mode background */
+  --foreground: #0e0e0e; /* Light mode text */
+  --accent: #e31e2a; /* Light mode accent color */
+  --secondary: #292929; /* Light mode secondary background */
+  --tertiary: #f5f5f5; /* Light mode tertiary elements */
+
+  --text-heading: #171717; /* Light mode heading color */
+  --text-muted: #707070; /* Light mode muted text */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* Dark mode background */
+    --foreground: #f5f5f5; /* Dark mode text */
+    --accent: #ff4a4a; /* Dark mode accent color */
+    --secondary: #1f1f1f; /* Dark mode secondary background */
+    --tertiary: #292929; /* Dark mode tertiary elements */
+
+    --text-heading: #ededed; /* Dark mode heading color */
+    --text-muted: #a1a1a1; /* Dark mode muted text */
   }
 }
 
@@ -19,20 +37,58 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-heading);
+}
+
+p,
+span,
+li {
+  color: var(--text-muted);
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 4rem 2rem;
+  background-color: var(--secondary);
+}
+
+.card {
+  background-color: var(--tertiary);
+  color: var(--foreground);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {

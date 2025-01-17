@@ -1,0 +1,88 @@
+.container {
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+  max-width: 1400px;
+  margin-inline: auto;
+  overflow: hidden;
+
+  /* Shape 1 - Decorative Shape */
+  .shape1 {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background-color: var(--foreground);
+    bottom: -50px;
+    right: 10%;
+    transform: rotate(20deg);
+    border-radius: 100px;
+    z-index: -3; /* Behind everything */
+    opacity: 0.2;
+  }
+
+  /* Shape 2 - Another Decorative Shape */
+  .shape2 {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background-color: var(--foreground);
+    top: -50px;
+    left: 40%;
+    transform: rotate(30deg);
+    border-radius: 80px;
+    z-index: -3; /* Behind everything */
+    opacity: 0.2;
+  }
+
+  /* Shape 3 - Another Decorative Shape */
+  .shape3 {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background-color: var(--foreground);
+    top: -80px;
+    right: 40%;
+    transform: rotate(-20deg);
+    border-radius: 80px;
+    z-index: -3; /* Behind everything */
+    opacity: 0.2;
+  }
+
+  /* Glassy Overlay */
+  .glassyLayer {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    z-index: -1;
+  }
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heroContent {
+      width: fit-content;
+      text-wrap: nowrap;
+      margin-top: 64px;
+
+      .roleContent {
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 50px;
+
+        .roleDescription {
+          text-wrap: wrap;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
