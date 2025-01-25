@@ -1,0 +1,80 @@
+.container {
+  height: 100%;
+  margin: 32px 16px;
+  padding: 32px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+
+  .experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-inline: 120px;
+
+    .careerDate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      row-gap: 16px;
+      padding-right: 16px;
+      margin-left: 16px;
+
+      :first-child {
+        position: relative;
+        padding: 8px 16px;
+        border: 2px solid var(--secondary);
+        border-radius: 8px;
+        font-style: italic;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 50px;
+          border: 2px solid var(--secondary);
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border-left: none;
+          top: 14px;
+          right: -12px;
+        }
+      }
+
+      :nth-child(2) {
+        padding: 8px 16px;
+        border: 2px solid var(--secondary);
+        border-radius: 8px;
+        text-wrap: nowrap;
+      }
+    }
+  }
+
+  .title {
+    margin-top: 8px;
+  }
+
+  .pattern {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-top: 40px;
+
+    > :nth-of-type(odd) {
+      background-color: unset;
+    }
+  }
+}

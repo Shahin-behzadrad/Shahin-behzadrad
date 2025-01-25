@@ -58,8 +58,6 @@ export const Text = ({
   const dynamicClass = getClassName();
   const HtmlTag = htmlTag;
 
-  console.log(dynamicClass);
-
   let maxNumberLineStyle = {};
   if (numberOfLines && numberOfLines > 0) {
     maxNumberLineStyle = {

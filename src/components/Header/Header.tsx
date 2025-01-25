@@ -1,8 +1,8 @@
 import Image from "next/image";
 import classes from "./Header.module.scss";
 
-import logo1 from "@/assets/logo/logo-1.png";
-import logo2 from "@/assets/logo/logo-2.png";
+import logo1 from "@public/logo/logo-1.png";
+import logo2 from "@public/logo/logo-2.png";
 
 const Header = () => {
   return (

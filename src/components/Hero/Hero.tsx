@@ -2,8 +2,8 @@ import Image from "next/image";
 import Text from "../shared/Text";
 import classes from "./Hero.module.scss";
 
-import logo1 from "@/assets/logo/logo-1.png";
-import logo2 from "@/assets/logo/logo-2.png";
+import logo1 from "@public/logo/logo-1.png";
+import logo2 from "@public/logo/logo-2.png";
 
 import React from "react";
 
@@ -42,6 +42,7 @@ const Hero = () => {
               />
             </div>
             <Text
+              color="secondary"
               className={classes.roleDescription}
               value="Front-End Developer skilled in creating clean and optimized user interfaces, with additional experience in back-end technologies like Node.js, MySQL, and Sequelize."
             />
