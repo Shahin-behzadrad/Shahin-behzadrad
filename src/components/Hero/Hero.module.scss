@@ -1,3 +1,5 @@
+@import "/src/styles/variables.scss";
+
 .container {
   position: relative;
   height: 100vh;
@@ -15,7 +17,7 @@
     right: 10%;
     transform: rotate(20deg);
     border-radius: 100px;
-    z-index: -3; /* Behind everything */
+    z-index: -3;
     opacity: 0.2;
   }
 
@@ -29,7 +31,7 @@
     left: 40%;
     transform: rotate(30deg);
     border-radius: 80px;
-    z-index: -3; /* Behind everything */
+    z-index: -3;
     opacity: 0.2;
   }
 
@@ -43,7 +45,7 @@
     right: 40%;
     transform: rotate(-20deg);
     border-radius: 80px;
-    z-index: -3; /* Behind everything */
+    z-index: -3;
     opacity: 0.2;
   }
 
@@ -70,17 +72,25 @@
     .heroContent {
       width: fit-content;
       text-wrap: nowrap;
-      margin-top: 64px;
+      margin-top: clamp(16px, 4vw, 64px);
+
+      .myName {
+        font-size: clamp(2rem, 5vw, 10rem);
+
+        .logo {
+          width: clamp(30px, 5vw, 40px);
+          height: auto; // Maintain aspect ratio
+        }
+      }
 
       .roleContent {
         display: flex;
         justify-content: space-between;
-        margin-inline: 50px;
-        align-items: flex-end;
+        margin-left: clamp(35px, 5vw, 45px);
+        align-items: flex-start;
 
-        .roleDescription {
-          text-wrap: wrap;
-          max-width: 350px;
+        .roleTitle {
+          font-size: clamp(1rem, 3vw, 1.8rem);
         }
       }
     }

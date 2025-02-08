@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  max-width: 1000px;
+  column-gap: 16px;
+  margin-bottom: 64px;
+  padding-inline: 16px;
+}

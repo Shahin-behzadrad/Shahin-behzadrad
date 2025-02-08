@@ -9,7 +9,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className={classes.container}>
+    <section className={classes.container} id="heor">
       <div className={classes.shape1} />
       <div className={classes.shape2} />
       <div className={classes.shape3} />
@@ -23,33 +23,41 @@ const Hero = () => {
             fontSize="xxxxl"
             htmlTag="h1"
             textAlign="center"
-            startAdornment={<Image src={logo1} width={50} alt="logo1" />}
-            endAdornment={<Image src={logo2} width={50} alt="logo1" />}
+            className={classes.myName}
+            startAdornment={
+              <Image
+                src={logo1}
+                width={40}
+                alt="logo1"
+                className={classes.logo}
+              />
+            }
+            endAdornment={
+              <Image
+                src={logo2}
+                width={40}
+                alt="logo2"
+                className={classes.logo}
+              />
+            }
           />
           <div className={classes.roleContent}>
-            <div>
-              <Text
-                value="Front-End Developer"
-                fontSize="xl"
-                htmlTag="h2"
-                textAlign="left"
-              />
-              <Text
-                value="(with Full-Stack Capabilities)"
-                color="secondary"
-                textAlign="left"
-                fontSize="xxl"
-              />
-            </div>
             <Text
+              value="Front-End Developer"
+              fontSize="xl"
+              htmlTag="h2"
+              textAlign="left"
+              className={classes.roleTitle}
+            />
+            {/* <Text
               color="secondary"
               className={classes.roleDescription}
               value="Front-End Developer skilled in creating clean and optimized user interfaces, with additional experience in back-end technologies like Node.js, MySQL, and Sequelize."
-            />
+            /> */}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
