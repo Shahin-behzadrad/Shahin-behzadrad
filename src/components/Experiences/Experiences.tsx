@@ -23,7 +23,7 @@ const Experiences = () => {
       <div className={classes.experience}>
         <Text value="As a Front-End Developer at A.P.P Software Solutions, I collaborated with a multidisciplinary team to design and maintain a scalable, user-friendly platform serving over 300,000 active users and 400+ businesses. My contributions focused on transforming complex UI designs into responsive, high-performing applications and driving optimizations that enhanced app speed, scalability, and user experience." />
 
-        {/* <div className={classes.careerDate}>
+        <div className={classes.careerDate}>
           <Text fontSize="sm" color="secondary" value="Jan 2023 - present" />
           <Text
             color="accent"
@@ -31,7 +31,7 @@ const Experiences = () => {
             value="A.P.P Software Solutions"
             fontSize="sm"
           />
-        </div> */}
+        </div>
       </div>
       <div className={classes.cardContainer}>
         {experienceCard.map((card, index) => (

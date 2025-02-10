@@ -30,19 +30,25 @@ const MobileSidebar = () => {
 
   return (
     <div className={classes.header}>
-      <Link href="#hero" className={classes.logoContainer}>
-        <Image src={logo1} width={25} alt="logo" />
-        <Image src={logo2} width={25} alt="logo" />
-      </Link>
       <div
-        onClick={() => setOpenSidebar(!openSidebar)}
-        className={clsx(classes.hamburger, {
-          [classes.open]: openSidebar,
+        className={clsx(classes.navContainer, {
+          [classes.hideBackground]: openSidebar,
         })}
       >
-        <div />
-        <div />
-        <div />
+        <Link href="#hero" className={classes.logoContainer}>
+          <Image src={logo1} width={25} alt="logo" />
+          <Image src={logo2} width={25} alt="logo" />
+        </Link>
+        <div
+          onClick={() => setOpenSidebar(!openSidebar)}
+          className={clsx(classes.hamburger, {
+            [classes.open]: openSidebar,
+          })}
+        >
+          <div />
+          <div />
+          <div />
+        </div>
       </div>
       <div
         className={clsx(classes.sidebar, {
