@@ -6,6 +6,7 @@ import logo1 from "@public/logo/logo-1.png";
 import logo2 from "@public/logo/logo-2.png";
 
 import React from "react";
+import About from "../About/About";
 
 const Hero = () => {
   return (
@@ -49,13 +50,9 @@ const Hero = () => {
               textAlign="left"
               className={classes.roleTitle}
             />
-            {/* <Text
-              color="secondary"
-              className={classes.roleDescription}
-              value="Front-End Developer skilled in creating clean and optimized user interfaces, with additional experience in back-end technologies like Node.js, MySQL, and Sequelize."
-            /> */}
           </div>
         </div>
+        <About />
       </div>
     </section>
   );

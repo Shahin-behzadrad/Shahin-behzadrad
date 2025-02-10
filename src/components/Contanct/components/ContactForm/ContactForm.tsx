@@ -121,6 +121,7 @@ const ContactForm = () => {
         fullwidth
         className={classes.submitBtn}
         variant="outlined"
+        color="primary"
         onClick={handleSubmit}
         disabled={isSubmitting}
         startIcon={isSuccess && <FaCheck className={classes.icon} />}

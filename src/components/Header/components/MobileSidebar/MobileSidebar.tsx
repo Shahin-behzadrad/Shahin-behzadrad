@@ -7,12 +7,24 @@ import Link from "next/link";
 import { SiReaddotcv } from "react-icons/si";
 
 import classes from "./MobileSidebar.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Button from "@/components/shared/Button/Button";
 
 const MobileSidebar = () => {
   const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (openSidebar) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+    }
+
+    return () => {
+      document.documentElement.style.overflow = "";
+    };
+  }, [openSidebar]);
 
   const closeSidebarHandler = () => setOpenSidebar(false);
 
@@ -38,17 +50,27 @@ const MobileSidebar = () => {
         })}
       >
         <div className={classes.navbarBtns}>
-          <Link onClick={closeSidebarHandler} href="#hero">
-            About
-          </Link>
-          <Link onClick={closeSidebarHandler} href="#experiences">
-            Experiences
-          </Link>
-          <Link onClick={closeSidebarHandler} href="#contact">
-            Contact
-          </Link>
+          <Button variant="outlined" color="secondary">
+            <Link onClick={closeSidebarHandler} href="#hero">
+              About
+            </Link>
+          </Button>
+          <Button variant="outlined" color="secondary">
+            <Link onClick={closeSidebarHandler} href="#experiences">
+              Experiences
+            </Link>
+          </Button>
+          <Button variant="outlined" color="secondary">
+            <Link onClick={closeSidebarHandler} href="#contact">
+              Contact
+            </Link>
+          </Button>
         </div>
-        <Button variant="contained" endIcon={<SiReaddotcv size={25} />}>
+        <Button
+          color="secondary"
+          variant="contained"
+          endIcon={<SiReaddotcv size={25} />}
+        >
           <Link
             target="_blank"
             href="https://docs.google.com/document/d/1pKqRf1k0KLBgEROYgfYvDzswTorfCDoQ5nxgviGOztg/edit?usp=sharing"

@@ -13,33 +13,70 @@
     width: 100%;
   }
 
-  &.text {
-    background: none;
-    color: var(--primary);
-    border: none;
+  &.primary {
+    background-color: var(--primary);
 
-    &:hover {
-      background: rgba(33, 150, 221, 0.1);
+    &.text {
+      background: none;
+      color: var(--primary);
+      border: none;
+
+      &:hover {
+        background: rgba(33, 150, 221, 0.1);
+      }
+    }
+
+    &.outlined {
+      background: none;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+
+      &:hover {
+        background: rgba(33, 150, 221, 0.1);
+      }
+    }
+
+    &.contained {
+      background: var(--primary);
+      color: var(--background);
+      border: none;
+
+      &:hover {
+        background: var(--primary-alt);
+      }
     }
   }
+  &.secondary {
+    background-color: var(--primary-alt);
 
-  &.outlined {
-    background: none;
-    color: var(--primary-alt);
-    border: 1px solid var(--primary-alt);
+    &.text {
+      background: none;
+      color: var(--primary-alt);
+      border: none;
 
-    &:hover {
-      background: rgba(33, 150, 221, 0.1);
+      &:hover {
+        background: rgba(33, 150, 221, 0.1);
+      }
     }
-  }
 
-  &.contained {
-    background: var(--primary-alt);
-    color: var(--background);
-    border: none;
+    &.outlined {
+      background: none;
+      color: var(--primary-alt);
+      border: 1px solid var(--primary-alt);
 
-    &:hover {
+      &:hover {
+        background: rgba(33, 150, 221, 0.1);
+      }
+    }
+
+    &.contained {
       background: var(--primary-alt);
+      color: var(--background);
+      border: none;
+
+      &:hover {
+        background: var(--primary-alt);
+      }
     }
   }
 

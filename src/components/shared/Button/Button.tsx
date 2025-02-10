@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   variant?: "text" | "outlined" | "contained";
+  color?: "primary" | "secondary";
   disabled?: boolean;
   fullwidth?: boolean;
   startIcon?: ReactNode;
@@ -22,6 +23,7 @@ const Button = ({
   variant = "contained",
   disabled = false,
   fullwidth,
+  color = "primary",
   endIcon,
   startIcon,
 }: ButtonProps) => {
@@ -35,6 +37,8 @@ const Button = ({
           [classes.text]: variant === "text",
           [classes.outlined]: variant === "outlined",
           [classes.contained]: variant === "contained",
+          [classes.primary]: color === "primary",
+          [classes.secondary]: color === "secondary",
           [classes.disabled]: disabled,
           [classes.hasStartIcon]: startIcon,
           [classes.hasEndIcon]: endIcon,
