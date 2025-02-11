@@ -23,7 +23,7 @@ export const experienceCard = [
       "Reduced API latency by 35% through efficient caching strategies and minimizing redundant API calls using React Query.",
   },
   {
-    icon: <RiNextjsFill color="var(--white)" size={30} />,
+    icon: <RiNextjsFill color="white" size={30} />,
     title: "Enhancing Server Response",
     description:
       "Improved server response time and reduced perceived load time by leveraging server-side rendering (SSR) with Next.js.",

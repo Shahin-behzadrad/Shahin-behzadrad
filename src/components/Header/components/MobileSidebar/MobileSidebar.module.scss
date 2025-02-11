@@ -46,13 +46,13 @@
 
     &.open {
       :nth-child(1) {
-        transform: rotate(39deg);
+        transform: rotate(45deg);
       }
       :nth-child(2) {
         opacity: 0;
       }
       :nth-child(3) {
-        transform: rotate(-39deg);
+        transform: rotate(-45deg);
       }
     }
   }
@@ -74,6 +74,14 @@
     flex-direction: column;
     row-gap: 24px;
     z-index: -1;
+
+    .themeSwitcher {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      column-gap: 8px;
+    }
 
     &.openSidebar {
       transform: translateX(0);

@@ -4,6 +4,7 @@ import logo1 from "@public/logo/logo-1.webp";
 import logo2 from "@public/logo/logo-2.webp";
 
 import classes from "./NavbarMenu.module.scss";
+import ThemeSwitcher from "@/components/ThemeSwitch/ThemeSwitcher";
 
 const NavbarMenu = () => {
   return (
@@ -16,6 +17,7 @@ const NavbarMenu = () => {
         <Link href="#hero">About</Link>
         <Link href="#experiences">Experiences</Link>
         <Link href="#contact">Contact</Link>
+        <ThemeSwitcher />
       </div>
     </nav>
   );

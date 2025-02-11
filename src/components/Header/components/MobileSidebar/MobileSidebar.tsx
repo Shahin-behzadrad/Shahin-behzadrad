@@ -10,6 +10,8 @@ import classes from "./MobileSidebar.module.scss";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Button from "@/components/shared/Button/Button";
+import ThemeSwitcher from "@/components/ThemeSwitch/ThemeSwitcher";
+import Text from "@/components/shared/Text";
 
 const MobileSidebar = () => {
   const [openSidebar, setOpenSidebar] = useState<boolean>(false);
@@ -90,6 +92,10 @@ const MobileSidebar = () => {
             View My CV
           </Link>
         </Button>
+        <div className={classes.themeSwitcher}>
+          <Text value="Toggle the Theme" />
+          <ThemeSwitcher />
+        </div>
       </div>
     </div>
   );
