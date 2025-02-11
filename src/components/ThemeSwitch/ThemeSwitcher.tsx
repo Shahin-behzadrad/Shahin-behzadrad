@@ -6,7 +6,7 @@ import clsx from "clsx";
 import classes from "./ThemeSwitcher.module.scss";
 
 const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [isMounted, setIsMounted] = useState(false); // Track if component is mounted
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
       setTheme(storedTheme);
     } else {
       // Default to light theme if no theme is stored
-      setTheme("light");
+      setTheme("dark");
     }
   }, []);
 
