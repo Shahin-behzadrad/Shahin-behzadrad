@@ -28,6 +28,8 @@
   }
   .navbarBtns {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     column-gap: 32px;
 
     button {
