@@ -18,7 +18,7 @@
     left: 14px;
     background: var(--background);
     font-size: 14px;
-    color: gray;
+    color: var(--text-muted);
     padding: 0 4px;
     transition: top 0.1s ease-in-out;
     pointer-events: none;
@@ -36,6 +36,7 @@
     transition: border-color 0.3s ease;
     outline: none;
     background-color: unset;
+    color: var(--foreground);
 
     &.noResize {
       resize: none;
