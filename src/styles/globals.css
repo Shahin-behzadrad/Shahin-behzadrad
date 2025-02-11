@@ -83,8 +83,9 @@ button {
   cursor: pointer;
 }
 
-#experiences {
-  scroll-margin-top: 110px; /* Adjust the value as needed */
+#experiences,
+#contact {
+  scroll-margin-top: 65px; /* Adjust the value as needed */
 }
 
 @media (prefers-color-scheme: dark) {
