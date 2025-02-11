@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo1 from "@public/logo/logo-1.png";
-import logo2 from "@public/logo/logo-2.png";
+import logo1 from "@public/logo/logo-1.webp";
+import logo2 from "@public/logo/logo-2.webp";
 
 import classes from "./NavbarMenu.module.scss";
 

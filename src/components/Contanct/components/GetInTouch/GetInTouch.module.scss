@@ -1,3 +1,5 @@
+@import "/src/styles/variables.scss";
+
 .container {
   height: 100%;
   flex: 1.5;
@@ -6,22 +8,14 @@
   flex-direction: column;
   row-gap: 32px;
 
-  .platformsContainer {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 16px;
+  @media (max-width: $breakpoint-md) {
+    padding-inline: 24px;
+    margin-bottom: 16px;
+  }
 
-    a {
-      color: var(--foreground);
-      transition: all 0.1s ease-in-out;
-      &:hover {
-        color: var(--primary);
-        scale: 1.05;
-      }
-
-      svg {
-        font-size: 32px;
-      }
+  .socialMedia {
+    @media (max-width: $breakpoint-sm) {
+      display: none;
     }
   }
 }

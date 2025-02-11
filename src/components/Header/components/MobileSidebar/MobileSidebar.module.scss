@@ -86,8 +86,14 @@
 
       font-size: 24px;
 
+      button {
+        padding: 0;
+      }
+
       button a {
         color: var(--primary-alt);
+        width: 100%;
+        padding: 8px 16px;
       }
     }
 

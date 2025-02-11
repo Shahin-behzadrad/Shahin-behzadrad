@@ -39,12 +39,6 @@
   }
 }
 
-html,
-body {
-  max-width: 1400px;
-  margin-inline: auto;
-}
-
 html {
   scroll-behavior: smooth;
 }

@@ -1,8 +1,6 @@
 import Text from "@/components/shared/Text";
 import classes from "./GetInTouch.module.scss";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 const GetInTouch = () => {
   return (
@@ -17,28 +15,8 @@ const GetInTouch = () => {
          the best way to get in touch. I promise I’ll make time to reply
           and help you with whatever you need."
       />
-      <div className={classes.platformsContainer}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={"https://www.linkedin.com/in/shahin-behzadrad"}
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={"https://www.github.com/shahin-behzadrad"}
-        >
-          <FaGithubSquare />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={"https://t.me/shahinbehzadrad"}
-        >
-          <FaTelegram />
-        </a>
+      <div className={classes.socialMedia}>
+        <SocialMedia />
       </div>
     </div>
   );

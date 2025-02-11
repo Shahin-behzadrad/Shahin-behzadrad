@@ -2,15 +2,15 @@ import Image from "next/image";
 import Text from "../shared/Text";
 import classes from "./Hero.module.scss";
 
-import logo1 from "@public/logo/logo-1.png";
-import logo2 from "@public/logo/logo-2.png";
+import logo1 from "@public/logo/logo-1.webp";
+import logo2 from "@public/logo/logo-2.webp";
 
 import React from "react";
 import About from "../About/About";
 
 const Hero = () => {
   return (
-    <section className={classes.container} id="heor">
+    <main className={classes.container} id="heor">
       <div className={classes.shape1} />
       <div className={classes.shape2} />
       <div className={classes.shape3} />
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
         <About />
       </div>
-    </section>
+    </main>
   );
 };
 
