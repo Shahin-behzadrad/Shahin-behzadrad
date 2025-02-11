@@ -36,8 +36,8 @@ const MobileSidebar = () => {
         })}
       >
         <Link href="#hero" className={classes.logoContainer}>
-          <Image src={logo1} width={25} alt="logo" />
-          <Image src={logo2} width={25} alt="logo" />
+          <Image src={logo1} width={20} alt="logo" />
+          <Image src={logo2} width={20} alt="logo" />
         </Link>
         <div
           onClick={() => setOpenSidebar(!openSidebar)}
