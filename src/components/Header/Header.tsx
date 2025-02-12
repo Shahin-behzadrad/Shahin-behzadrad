@@ -1,13 +1,20 @@
 "use client";
 
-import { useBreakpoint } from "@/utils/hooks";
 import MobileSidebar from "./components/MobileSidebar/MobileSidebar";
 import NavbarMenu from "./components/NavbarMenu/NavbarMenu";
+import classes from "./Header.module.scss";
 
 const Header = () => {
-  const isMobile = useBreakpoint(600);
-
-  return <>{isMobile ? <MobileSidebar /> : <NavbarMenu />}</>;
+  return (
+    <>
+      <div className={classes.mobileHeader}>
+        <MobileSidebar />
+      </div>
+      <div className={classes.desktopHeader}>
+        <NavbarMenu />
+      </div>
+    </>
+  );
 };
 
 export default Header;

@@ -62,35 +62,35 @@ const MobileSidebar = () => {
             onClick={closeSidebarHandler}
             variant="outlined"
             color="secondary"
+            href="#hero"
           >
-            <Link href="#hero">About</Link>
+            About
           </Button>
           <Button
             onClick={closeSidebarHandler}
             variant="outlined"
             color="secondary"
+            href="#experiences"
           >
-            <Link href="#experiences">Experiences</Link>
+            Experiences
           </Button>
           <Button
             onClick={closeSidebarHandler}
             variant="outlined"
             color="secondary"
+            href="#contact"
           >
-            <Link href="#contact">Contact</Link>
+            Contact
           </Button>
         </div>
         <Button
           color="secondary"
           variant="contained"
           endIcon={<SiReaddotcv size={25} />}
+          href="https://docs.google.com/document/d/1pKqRf1k0KLBgEROYgfYvDzswTorfCDoQ5nxgviGOztg/edit?usp=sharing"
+          blank
         >
-          <Link
-            target="_blank"
-            href="https://docs.google.com/document/d/1pKqRf1k0KLBgEROYgfYvDzswTorfCDoQ5nxgviGOztg/edit?usp=sharing"
-          >
-            View My CV
-          </Link>
+          View My CV
         </Button>
         <div className={classes.themeSwitcher}>
           <Text value="Toggle the Theme" />

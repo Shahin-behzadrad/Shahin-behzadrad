@@ -95,5 +95,12 @@
         }
       }
     }
+
+    .myCv {
+      box-shadow: 0 0 5px var(--foreground);
+      @media (max-width: $breakpoint-sm) {
+        display: none;
+      }
+    }
   }
 }

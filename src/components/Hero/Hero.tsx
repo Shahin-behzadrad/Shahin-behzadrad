@@ -5,8 +5,10 @@ import classes from "./Hero.module.scss";
 import logo1 from "@public/logo/logo-1.webp";
 import logo2 from "@public/logo/logo-2.webp";
 
-import React from "react";
+import { SiReaddotcv } from "react-icons/si";
+
 import About from "../About/About";
+import Button from "../shared/Button/Button";
 
 const Hero = () => {
   return (
@@ -53,6 +55,16 @@ const Hero = () => {
           </div>
         </div>
         <About />
+        <Button
+          className={classes.myCv}
+          blank
+          href="https://docs.google.com/document/d/1pKqRf1k0KLBgEROYgfYvDzswTorfCDoQ5nxgviGOztg/edit?usp=sharing"
+          variant="outlined"
+          color="primary"
+          endIcon={<SiReaddotcv size={25} />}
+        >
+          View My CV
+        </Button>
       </div>
     </main>
   );
